@@ -12,16 +12,20 @@ from mediapipe.tasks.python.vision import (
 import urllib.request
 import os
 
-
-MODELS = { 
-    "pose_landmarker.task": "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/latest/pose_landmarker_lite.task", 
-    "face_landmarker.task": "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/latest/face_landmarker.task",
-    "hand_landmarker.task": "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/latest/hand_landmarker.task", }
-            
+MODELS = {
+    "pose_landmarker.task":
+        "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/latest/pose_landmarker_lite.task",
+    "face_landmarker.task":
+        "https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/latest/face_landmarker.task",
+    "hand_landmarker.task":
+        "https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/latest/hand_landmarker.task",
+}
+ 
 for filename, url in MODELS.items():
-    if not os.path.exists(filename): 
-        print(f"Baixando {filename}...") urllib.request.urlretrieve(url, filename) print(f"{filename} baixado.")
-
+    if not os.path.exists(filename):
+        print(f"Baixando {filename}...")
+        urllib.request.urlretrieve(url, filename)
+        print(f"{filename} baixado.")
 
 SMILE_THRESHOLD    = 0.3
 TOUCH_THRESHOLD    = 0.05
