@@ -41,13 +41,7 @@ https://github.com/Gledson-Perdival-Junior/sistema_de_reconhecimento_facial.git
 cd sistema_de_reconhecimento_facial
 ```
 
-### 2️⃣ Crie um ambiente virtual
-```bash
-python -m venv venv
-source venv/Scripts/activate  # Windows
-```
-
-### 3️⃣ Instale as dependências
+### 2️⃣ Instale as dependências
 ```bash
 pip install opencv-python mediapipe numpy
 ```
