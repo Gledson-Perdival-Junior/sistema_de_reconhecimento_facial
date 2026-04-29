@@ -25,9 +25,9 @@ O objetivo é classificar expressões faciais simples com base em proporções g
 
 ## 🚀 Tecnologias utilizadas
 
-- **Python 3.10**
+- **Python 3.14.3**
 - **OpenCV**
-- **MediaPipe**
+- **MediaPipe 0.10.35**
 - **Numpy**
 
 ---
